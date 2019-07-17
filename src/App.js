@@ -1,17 +1,19 @@
 import React, {useState, useEffect} from "react";
 import "./App.css";
-import axios from 'axios';
-import Nasa from "./photo.js";
+import Card from "./components/card.js";
+import Info from "./components/Info.js";
+import axios from "axios";
 
 function App() {
-  const[photo, setPhoto] = useState('');
+  const[photo, setPhoto] = useState({});
 
   useEffect(() => {
-      fetch(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-07-17`)
-      .then(res => res.json())
+      axios.get(`https://api.nasa.gov/planetary/apod?api_key=PpdWIIwaikqTR6eCEPW32XxQpUbGIHjkg1HP4IzW&date=2019-07-12`)
+      // .then(res => res.json())
       .then(res => {
           console.log("The res is working!", res);
-          setPhoto(res);
+          const nasaInfo = res.data;
+          setPhoto(nasaInfo);
       })
       .catch( res => console.log("Error with useEffect axios", res));
   }, []);
@@ -22,10 +24,8 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
       </p>
-      <div>
-        <h1>{photo.title}</h1>
-        <img src={photo.url}></img>
-      </div>
+      <Card img={photo.url} title={photo.title}/>
+      <Info text={photo.explanation} />
     </div>
   );
 }
