@@ -1,11 +1,12 @@
 import React from 'react';
 
-function Info ({text}) {
+const Info = ({text, copy}) => {
     return(
         <div>
-            {text}
+        <div>{text}</div>
+        <p>{copy}</p>
         </div>
-    )
+    );
 }
 
 export default Info;
