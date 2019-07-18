@@ -12,7 +12,7 @@ const Copy = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #0E0B16;
+  color: #A239CA;
 `;
 
 const Copyright = ({copy}) => {

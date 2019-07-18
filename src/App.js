@@ -9,20 +9,19 @@ import axios from "axios";
 
 const FullDiv = styled.div`
   width: auto;
-  // background-color: #0E0B16;
+  background-color:	#0B1027;
   height: ${window.innerHeight}px;
 `;
 
 const FullCardDiv = styled.div`
   width: auto;
-  // 
   margin-top: 1em;
   margin-right: 2.5em;
   margin-left: 2.5em;
   border: solid 0.1em #0E0B16;
   border-radius: 2em;
-  background-color: #E7DFDD;
-  // color: white;
+  background-color: #0E0B16;
+  color: white;
 `;
 const NavBar = styled.div`
   width: 100%;

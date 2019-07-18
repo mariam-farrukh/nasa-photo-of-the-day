@@ -14,6 +14,7 @@ const Image = styled.img`
   width: 20em;
   height: 20em;
   border-radius: 5%;
+  border: 0.07em solid #A239CA;
 `;
 
 const Card = ({img, title}) => {
