@@ -1,11 +1,25 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const WrapperDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Image = styled.img`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25em;
+  height: 20em;
+`;
 
 const Card = ({img, title}) => {
   return(
-    <div>
-      <h1>{title}</h1>
-      <img src={img}/>
-    </div>
+    <WrapperDiv>
+      <Image src={img}/>
+    </WrapperDiv>
   )
 }
 

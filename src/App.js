@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
+import styled from 'styled-components';
 import "./App.css";
 import Card from "./components/card.js";
+import Title from "./components/Title.js";
 import Info from "./components/Info.js";
 import axios from "axios";
 
@@ -21,10 +23,12 @@ function App() {
       <p>
         🚀
       </p>
-      <Card img={nasa.url} title={nasa.title}/>
+      <Title  title={nasa.title}/>
+      <Card img={nasa.url}/> 
       <Info text={nasa.explanation} copy={nasa.copyright}/>
     </div>
   );
 }
+
 
 export default App;
