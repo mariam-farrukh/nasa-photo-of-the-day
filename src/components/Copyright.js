@@ -2,16 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 const CDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0.25em;
+    margin: 0.25em;
+    padding-top:0.25em;
+    padding-left:0.5em;
+    padding-right:0.5em;
 `;
 
 const Copy = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #0E0B16;
 `;
 
 const Copyright = ({copy}) => {

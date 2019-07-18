@@ -12,7 +12,10 @@ const Text = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25em;
+  width: auto;
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
 `;
 
 const Info = ({text}) => {

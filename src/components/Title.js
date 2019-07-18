@@ -10,7 +10,7 @@ const Header1 = styled.h1`
 display: flex;
 justify-content: center;
 font-size: 1.5em;
-color: pink;
+color: #4717F6;
 width: 20em;
 padding: 0.25em;
 `;

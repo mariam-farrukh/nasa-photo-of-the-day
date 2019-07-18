@@ -11,9 +11,9 @@ const Image = styled.img`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25em;
+  width: 20em;
   height: 20em;
-  border-radius: 100%;
+  border-radius: 5%;
 `;
 
 const Card = ({img, title}) => {
