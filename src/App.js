@@ -39,7 +39,7 @@ function App() {
   const[nasa, setNasa] = useState({});
 
   useEffect(() => {
-      axios.get(`https://api.nasa.gov/planetary/apod?api_key=PpdWIIwaikqTR6eCEPW32XxQpUbGIHjkg1HP4IzW&date=2016-06-16`)
+      axios.get(`https://api.nasa.gov/planetary/apod?api_key=PpdWIIwaikqTR6eCEPW32XxQpUbGIHjkg1HP4IzW&date=2019-07-14`)
       .then(res => {
           console.log("The res is working!", res);
           const nasaInfo = res.data;
