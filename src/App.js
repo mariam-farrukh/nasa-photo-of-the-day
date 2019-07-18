@@ -4,6 +4,7 @@ import "./App.css";
 import Card from "./components/card.js";
 import Title from "./components/Title.js";
 import Info from "./components/Info.js";
+import Copyright from "./components/Copyright.js";
 import axios from "axios";
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
       </p>
       <Title  title={nasa.title}/>
       <Card img={nasa.url}/> 
-      <Info text={nasa.explanation} copy={nasa.copyright}/>
+      <Info text={nasa.explanation}/>
+      <Copyright copy={nasa.copyright}/>
     </div>
   );
 }

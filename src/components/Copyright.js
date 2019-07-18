@@ -1,26 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const TextDiv = styled.div`
+const CDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 0.5em;
+  padding-top: 0.25em;
 `;
 
-const Text = styled.div`
+const Copy = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25em;
 `;
 
-const Info = ({text}) => {
+const Copyright = ({copy}) => {
     return(
-    <TextDiv>
-        <Text>{text}</Text>
-    </TextDiv>
+    <CDiv>
+        <Copy>© {copy}</Copy>
+    </CDiv>
     );
 }
 
-export default Info;
+export default Copyright;

@@ -12,7 +12,7 @@ justify-content: center;
 font-size: 1.5em;
 color: pink;
 width: 20em;
-padding: 1em;
+padding: 0.25em;
 `;
 
 const Title = ({title}) => {

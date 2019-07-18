@@ -13,6 +13,7 @@ const Image = styled.img`
   align-items: center;
   width: 25em;
   height: 20em;
+  border-radius: 100%;
 `;
 
 const Card = ({img, title}) => {
